@@ -47,5 +47,5 @@ function appinit() {
     main.style.display = 'block';
     loader.style.display = 'none';
     console.log('hello');
-  }, 1000);
+  }, 9000);
 }
