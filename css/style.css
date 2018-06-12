@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+}
+.leftcontainer {
+    flex: 50%;
+    max-width: 50%;
+    position: relative;
+    height: 100vh;
+}
+.rightcontainer {
+    position: relative;
+    flex: 50%;
+    max-width: 50%;
+    color: #333;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+.rightcontainer h1 {
+    margin-top: 20px;
+}
+.margin-t {
+    margin-top: 20px;
+}
+.opacidad {
+    opacity: 0.7;
+}
+.imagenfondo {
+    background-image: url('../img/5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+}
+.overlay {
+    background-color: #fff;
+    opacity: 0.1;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+}
+.overlay-r {
+    background-color: #fff;
+    opacity: 0.4;
+    height: 30%;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+}
+.lefttext {
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.noviosnombre {
+    font-family: 'Clicker Script', cursive;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+}
+.titulocolor {
+    color: red;
+    font-family: 'Clicker Script', cursive;
+}
+.fecha span {
+    color: red;
+}
+.titulocontador {
+    padding: 20px;
+}
+.contador span {
+    padding: 14px;
+    color: #333;
+    background: #fff;
+    border: 5px solid #ddd;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.contador {
+    font-size: 24px;
+    color: red;
+    padding: 20px;
+}
+.fecha {
+    padding: 20px;
+}
+.titulotop {
+    margin-top: 20px;
+}
+.titulobottom {
+    margin-top: 300px;
+}
+.img-fluid {
+    height: auto;
+    width: 100%;
+}
+.containerpareja {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+.container-img {
+    flex: 40%;
+    max-width: 50%;
+    position: relative;
+    color: #333;
+    border: 1px solid #ddd;
+}
+.margin-l {
+    margin-left: 10px;
+}
+.pareja-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 999;
+    font-weight: bold;
+    padding: 10px;
+}
+.imagen-l {
+    position: relative;
+}
+.justify-t {
+    text-align: justify;
+    background-color: #fff;
+    padding: 20px;
+}
+.info-text {
+    text-align: justify;
+    padding: 20px;
+}
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.colunm {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+.flex-foto img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.text-c {
+    text-align: center;
+}
+@media only screen and (max-width: 768px ) {
+    * {
+        overflow: auto;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .leftcontainer {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .rightcontainer {
+        flex: 100%;
+        max-width: 100%;
+        overflow: auto;
+        height: auto;
+    }
+    .colunm {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .container-img {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .margin-l {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .noviosnombre {
+        font-size: 50px;
+    }
+    .contador {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .contador span {
+        padding: 5px;
+    }
+    .titulobottom {
+        margin-top: 250px;
+    }
+    .titulocontador {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .fecha {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .img-fluid, .container-img, .imagen-l {
+        overflow: hidden;
+    }
+    .imagen-l {
+        max-height: 600px;
+    }
+}
