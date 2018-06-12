@@ -29,3 +29,23 @@ var x = setInterval(function() {
     document.getElementById("contador").innerHTML = "Felicidades";
   }
 }, 1000);
+eventosinit();
+function eventosinit() {
+  document.addEventListener('DOMContentLoaded', appinit);
+}
+function appinit() {
+  
+  var spinner = document.getElementById('spinner');
+  spinner.style.display = 'block';
+  var main = document.getElementById('main');
+  main.style.display = 'none';
+  var loader = document.getElementById('loader');
+  loader.style.display = 'block';
+ 
+  setTimeout(function() {
+    spinner.style.display = 'none';
+    main.style.display = 'block';
+    loader.style.display = 'none';
+    console.log('hello');
+  }, 9000);
+}

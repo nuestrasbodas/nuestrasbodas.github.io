@@ -167,6 +167,21 @@
 .text-c {
     text-align: center;
 }
+.loader {
+    height: 100vh;
+    display: none;
+    position: relative;
+}
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+}
+main {
+    
+}
 @media only screen and (max-width: 768px ) {
     * {
         overflow: auto;
